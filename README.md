@@ -1,7 +1,8 @@
 # Resume
 My resume(s)/CV
 
-Template used:
+
+Based on following template:
 
 Resume in Latex
 
