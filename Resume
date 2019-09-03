@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+  \textbf{\Large Mykola Nechyporuk} & \href{mailto:mv.nechyporuk@gmail.com}
+  {mv.nechyporuk@gmail.com}
+  & \href{https://www.github.com/MechyKola}{github.com/MechyKola}\\
+  Bristol, UK & +44 7413 766103 & \href{https://www.linkedin.com/in/mykolan}
+  {linkedin.com/in/mykolan}\\
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Bristol, UK}
+      {MEng Computer Science}{2019 - 2023}
+      \resumeSubheading
+      {The Cherwell School}{Oxford, UK}
+      {A Levels}{2017 - 2019}
+	 \resumeItemListStart
+        \resumeItem{A*A*AAB}
+          {Mathematics, Russian, Computer Science, Physics, Further Mathematics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CodeRobin}{Oxford, UK}
+      {Intern}{Aug. 2019 - Current}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Led a team of 2 through part of Google's Widevine L1 certification process for an android tablet}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Visma}{Copenhagen, Denmark}
+      {QA Automation Work Experience}{Aug. 2018 - Aug. 2018}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Wrote unit tests using Nightwatch.js, extending coverage to 3 more pages}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Oxford Economics}{Oxford, UK}
+      {Software Development Intern}{July. 2018 - Aug. 2018}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Developed a C\# Microsoft bot framework chatbot that presented economic 
+          reports and articles in chat, performing asynchronous requests to relevant APIs,
+          and parsing tables and articles in the response into an easy to read format}
+        \resumeItem{}  
+          {Integrated search engine that analyzed and replaced misspelled words,
+          reducing unnecessary/invalid requests}
+        \resumeItem{}
+          {Analyzed use cases and documented project start to finish, 
+          developing it using an agile approach}
+        \resumeItem{}
+          {Demonstration of completed project prompted the 
+          implementation of a server-side graph rendering service}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Kennedy Institute of Rheumatology}{Oxford, UK}
+      {Research Work Experience}{July. 2018 - July. 2018}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Captured photographs of cells, processed them using Fiji and 
+          performed statistical analysis using Excel}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%----------PROJECTS----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Reaction Training Game}{\href{https://github.com/MechyKola/ClickingCircles}
+      {github.com/MechyKola/ClickingCircles}}
+      {SPA Web App + RESTful API}{\href{https://clickyeet.herokuapp.com/}
+      {https://clickyeet.herokuapp.com/}}
+      \resumeItemListStart
+        \resumeItem{}
+          {Single page application developed in Vue.js, using Vuex for global state management,
+          as well as Vuetify.js and reusable components to provide a consistent material design
+          user experience}
+        \resumeItem{}
+          {RESTful API written in Python with Flask and SQLAlchemy, manages user data and 
+          settings in a Heroku Postgres Database, checks passwords against 
+          hashes and calculates scores}
+        \resumeItem{}
+          {Game component requires user to click circles as fast as possible, responds with
+          a bar graph of subscores}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+  \textbf{Languages}{ Previously used Python, JavaScript, C\#} \\
+  \textbf{Technologies}{ Previously used Flask, 
+  Vue.js, Vuex, Vuetify.js, Microsoft bot framework, Git, Github, Heroku} \\
+  \textbf{Fluent in}{ English, Ukrainian, Russian} \\
+
+
+%---------achievements------------
+\section{Achievements}
+  \textbf{British Mathematical Olympiad 2018-19}{ Merit} \\
+  \textbf{Cherwell debating competition}{ 2018 Finalist, ranked 3rd out of 16} \\
+  \textbf{UK Maths Challenge}{ 5 Gold  awards} \\
+  
+  
+%-------------------------------------------
+\bigskip
+\centerline{References available upon request}
+\end{document}
