@@ -1,3 +1,10 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
 \documentclass[a4paper,11pt]{article}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -85,16 +92,17 @@
       {University of Bristol}{Bristol, UK}
       {MEng Computer Science}{2019 - 2023}
       \resumeItemListStart
-        \resumeItem{Computer Science Society}{President}
         \resumeItem{First year weighted average}
         {88\%}
+        \resumeItem{Computer Science Society}{President}
+        \resumeItem{UkrSoc}{Social Media Coordinator}
         \resumeItemListEnd
       \resumeSubheading
       {The Cherwell School}{Oxford, UK}
       {A Levels}{2017 - 2019}
 	  \resumeItemListStart
-        \resumeItem{}
-          {A*A*AAB in Mathematics, Russian, Computer Science, Physics, Further Mathematics}
+        \resumeItem{A*A*AAB}
+          {in Mathematics, Russian, Computer Science, Physics, Further Mathematics}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -102,7 +110,7 @@
 %--------SKILLS------------
 \section{Skills}
   \textbf{Languages}{ Python (regularly use); C, JavaScript, Haskell, C\#, Java (previously used)} \\
-  \textbf{Technologies}{ Vue.js, Git, Github, Flask, Microsoft bot framework (previously used)} \\
+  \textbf{Technologies}{ React JS, Vue.js, Git, Github, Docker, Flask, Microsoft bot framework (previously used)} \\
   \textbf{Fluent in}{ English, Ukrainian, Russian} \\
 
 
@@ -110,13 +118,22 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Software Engineering Intern}{London, UK}
+      {Commerzbank AG}{June. 2020 - Present}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Developed a react application to retrieve and view bond information}
+        \resumeItem{}
+          {Used websockets and reactVis to present graphs of real time data}
+      \resumeItemListEnd
+    \resumeSubheading
       {Software Development Intern}{Oxford, UK}
       {Oxford Economics}{July. 2018 - Aug. 2018}
       \resumeItemListStart
       	\resumeItem{}
           {Developed a C\# Microsoft bot framework chatbot that presented economic 
           reports and articles in chat, performing asynchronous requests to relevant APIs,
-          and parsing tables and articles in the response into an easy to read format}
+          and parsing tables and articles in the response}
         \resumeItem{}
           {Demonstration of completed project prompted the 
           implementation of a server-side graph rendering service}
@@ -145,14 +162,6 @@
       	\resumeItem{}
           {Wrote unit tests using Nightwatch.js, extending coverage to 3 more web pages (views)}
       \resumeItemListEnd
-    \resumeSubheading
-      {Research Work Experience}{Oxford, UK}
-      {Kennedy Institute of Rheumatology}{July. 2018 - July. 2018}
-      \resumeItemListStart
-      	\resumeItem{}
-          {Captured photographs of cells, analysed them using Fiji and 
-          conducted hypothesis testing after processing data through Excel}
-      \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
@@ -167,16 +176,11 @@
       {https://clickyeet.herokuapp.com/}}
       \resumeItemListStart
         \resumeItem{}
-          {Single page application developed in Vue.js, using Vuex for global state management,
-          and Vuetify.js for a consistent material design
-          user experience}
+          {Single page application developed in Vue.js with Vuex and Vuetify.js}
         \resumeItem{}
           {RESTful API written in Python with Flask and SQLAlchemy, manages user data and 
           settings in a Heroku Postgres Database, checks passwords against 
           hashes and calculates scores}
-        \resumeItem{}
-          {Game component requires user to click circles as fast as possible, responds with
-          a bar graph of subscores}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
