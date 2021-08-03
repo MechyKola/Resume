@@ -94,29 +94,29 @@
       \resumeItemListStart
         \resumeItem{Teaching Assistant}
         {Imperative and Functional Programming, Mathematics for Computer Science A}
-        \resumeItem{First year}
-        {88 (First Class); 98 in Functional Programming, 79 in Imperative Programming}
         \resumeItemListEnd
-      \resumeSubheading
-      {The Cherwell School}{Oxford, UK}
-      {A Levels}{2017 - 2019}
-	  \resumeItemListStart
-        \resumeItem{A*A*AAB}
-          {Mathematics, Russian, Computer Science, Physics, Further Mathematics}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %--------SKILLS------------
 \section{Skills}
-  \textbf{Languages}{ Python, JavaScript, C, Go / Golang, C\#, Java (order of descending proficiency)} \\
-  \textbf{Technologies}{ ReactJS, Vue.js, Git, Github, Jira} \\
+  \textbf{Languages}{ Python, C\#, JavaScript, C, Go / Golang, Java (order of descending proficiency)} \\
+  \textbf{Technologies}{ ReactJS, Vue.js, WPF, Git, Github, Jira} \\
   \textbf{Fluent in}{ English, Ukrainian, Russian} \\
 
 
 %-----------TECHNICAL-----------------
 \section{Technical Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{Amsterdam, Netherlands}
+      {Optiver}{Jun. 2021 - Aug. 2021}
+      \resumeItemListStart
+      	\resumeItem{}
+          {Implemented C\# WPF GUI for viewing 2M+ data feeds}
+      	\resumeItem{}
+          {Used CPU and memory profiling to improve performance}
+      \resumeItemListEnd
     \resumeSubheading
       {Software Engineering Intern}{London, UK}
       {Commerzbank AG}{Jun. 2020 - Sep. 2020}
@@ -148,42 +148,39 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {President}{Bristol, UK}
-      {University of Bristol Computer Science Society}{Jun. 2020 - Present}
+      {University of Bristol Computer Science Society}{Jun. 2020 - May 2021}
       \resumeItemListStart
         \resumeItem{}
-          {Led 15-strong committee to organize 10+ events with up to 100+ attendees}
+          {Led 15-strong committee to organize 20+ events with up to 100+ attendees}
         \resumeItem{}
           {Initiated collaboration with EWB UCL and the University of Cambridge Competitive Programming Society}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Intern}{Oxford, UK}
-      {CodeRobin (Part-time, Remote)}{Aug. 2019 - Sep. 2019}
-      \resumeItemListStart
-      	\resumeItem{}
-          {Led distributed team of 2 through part of Google's Widevine L1 certification process for an android tablet}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %----------PROJECTS----------------
-\section{Projects \& Coursework}
+\section{Coursework}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Reaction Training Game}{\href{https://github.com/MechyKola/ClickingCircles}
-      {github.com/MechyKola/ClickingCircles}}
+      {Game of Life}{}
+      {Distributed and parallelized Game of Life}{}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented engine allowing many to many relationship between remote clients and Game of Life processes, displaying live progress, allowing pausing and saving progress on clients}
+        \resumeItem{}
+          {Message passing between worker nodes, each processing a horizontal strip of the game of life world}
+        \resumeItem{}
+          {Memory sharing between threads, each processing a vertical strip of the worker's horizontal strip}
+        \resumeItem{}
+          {Achieved consistency through use of golang channels, connecting workers on AWS instances using rpc library}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Reaction Training Game}{}
       {Game with account system, scoring, player ranking}{\href{https://clickyeet.herokuapp.com/}
       {https://clickyeet.herokuapp.com/}}
       \resumeItemListStart
         \resumeItem{}
           {Vue.js, Vuex \& Vuetify.js web app frontend, Python \& Flask API, Heroku Postgres Database}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Sketch}{\href{https://github.com/MechyKola/Sketch}
-      {github.com/MechyKola/Sketch}}
-      {Imperative Programming (C) Coursework}{}
-      \resumeItemListStart
-        \resumeItem{}
-          {Wrote a program to convert between PGM (grey map) and a custom ``Sketch" (vector) format, with unit tests}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -192,8 +189,6 @@
 \section{Achievements}
   \textbf{Bris Hack 20}{ Environmental Category Winning Team} \\
   \textbf{British Mathematical Olympiad 2018-19}{ Merit} \\
-  \textbf{Cherwell Debating Competition 2018}{ Finalist, ranked 3rd out of 16} \\
-  \textbf{UK Maths Challenge}{ 5 Gold  awards} \\
   
   
 %-------------------------------------------
