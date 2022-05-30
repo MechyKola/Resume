@@ -1,4 +1,4 @@
 # Resume
-My resume(s)/CV(s)
+My resumes and CVs
 
 PDF and latex source code
