@@ -1,17 +1,17 @@
 name: Build LaTeX document
-on: [fork] # [push] if using properly, current stopped
+on: [push]
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Resume.tex
       - name: Upload as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Resume.pdf
           path: Resume.pdf
