@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Original Author : Sourabh Bajaj
-% Original Website: https://github.com/sb2nov/resume
+% Original Website: [https://github.com/sb2nov/resume](https://github.com/sb2nov/resume)
 % License : MIT
 %------------------------
 
@@ -54,7 +54,7 @@
 
 % ~ on each side of \hfill guarantees a literal space in the PDF text layer
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \textbf{#1}~\hfill~#2 \\
     \textit{\small#3}~\hfill~\textit{\small#4}
   \vspace{-5pt}
@@ -69,7 +69,8 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+% Outer list: same nesting/spacing as before, but no bullet and no left indent
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemindent=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -92,7 +93,7 @@
 
 %--------SUMMARY------------
 \section{Summary}
-  {Versatile full-stack engineer with 4+ years delivering infra for 30k+ developers. A proactive collaborator comfortable managing stakeholders and scope across diverse, ambiguous domains.} \\
+  {Versatile full-stack engineer with 4+ years experience delivering infra for 30k+ developers, comfortable managing stakeholders and scope in an ambiguous environment.} \\
 
 
 %--------SKILLS------------
@@ -107,34 +108,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Meta (WhatsApp)}{London, UK}
-      {IC4 Software Engineer}{Feb. 2024 - Current}
-      \resumeItemListStart
-      	\resumeItem{}
-          {Led design and rollout of an offline code-analysis platform to inventory operational loggers across the codebase, creating a reliable source of truth for compliance and observability.}
-        \resumeItem{}
-          {Enabled static and dynamic analysis pipelines and CI integration that tracks privacy assignment of loggers, fulfilling EU regulatory commitments while preserving developer velocity.}
-        \resumeItem{}
-          {Introduced ownership attribution for operational logging, enabling targeted task delegation and reducing load on critical infra oncall rotations.}
-        \resumeItem{}
-          {Owned and evolved an internal data-access tool, aligning engineering and approval stakeholders on streamlined workflows and onboarding 4 engineers to continue the development.}
-      	\resumeItem{}
-          {Onboarded legacy metric identifiers into automated deletion systems, set up monitoring, eliminating redundant storage and saving \$40k+ per year while simplifying data-retention compliance.}
-        \resumeItem{}
-          {Implemented dozens of updates to production services to improve tracking of data flows within and between systems, working with service owners to roll out changes safely.}
-        \resumeItem{}
-          {Optimised critical compliance pipelines (time, space, and DB connection usage), improving reliability and lowering operational costs for regulatory reporting.}
-      \resumeItemListEnd
-      \resumeSubSubheading
-      {IC3 Software Engineer}{May. 2022 - Feb. 2024}
+      {Software Engineer}{May. 2022 - Current}
       \resumeItemListStart
         \resumeItem{}
-          {Scoped and delivered a tool to track data access requiring legal approval, partnering with legal and engineering stakeholders to automate work that previously consumed an entire team.}
+          {Scoped and delivered a tool to track data access requiring approval, partnering with legal and engineering stakeholders to automate work that previously consumed an entire team. Onboarded 4 engineers to continue the development, reduced time to access by over 90\%, and enabled automated access provisioning and AI integration.}
+      	\resumeItem{}
+          {Led design and rollout of an offline code-analysis platform to inventory operational loggers across the codebase, creating a reliable source of truth for ownership, compliance and observability.}
         \resumeItem{}
-          {Reduced time to access by over 90\% by designing automated notifications and parallelising stakeholder approvals.}
+          {Enabled static and dynamic analysis pipelines and CI integration that tracks privacy assignment of loggers, fulfilling EU privacy directive regulatory requirements while preserving developer velocity.}
+      	\resumeItem{}
+          {Onboarded legacy metric identifiers into automated deletion systems and set up monitoring, saving \$40k+ per year while simplifying data-retention compliance.}
         \resumeItem{}
-          {Structured previously freeform access records into auditable, schematised data, enabling faster internal audits and simplifying regulatory reporting.}
-        \resumeItem{}
-          {Initiated and organised team and office-wide social events (swag, dinners, activities), strengthening cohesion and supporting onboarding of new colleagues.}
+          {Implemented dozens of updates to production services to improve tracking of data flows within and between systems, working with service owners to canary and roll out changes safely with feature flags.}
       \resumeItemListEnd
     \resumeSubheading
       {Optiver}{Amsterdam, NL}
